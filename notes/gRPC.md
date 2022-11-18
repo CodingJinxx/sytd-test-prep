@@ -166,7 +166,7 @@ public class GreeterService : GreeterBase {
 ```cs
 public class Program {
     var channel = GrpcChannel.ForAddress(
-        "http://localhaost:5242"
+        "http://localhost:5242"
     );
     var client = new GreeterServiceClient(channel);
     var reply = client.Greet(
